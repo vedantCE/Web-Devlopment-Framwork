@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="registration.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header-logo">
+    <a href="index.html">
+      <img src="charusat logo.jpeg" alt="CHARUSAT Logo" class="logo-img" />
+    </a>
+  </header>
+
+  <div class="container">
+    <h2>Registration</h2>
+    <form>
+
+      <!-- Name -->
+      <label for="name" class="icon">Name</label>
+      <div class="input-container">
+        <i class="fas fa-user"></i>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      </div>
+
+      <!-- ID -->
+      <label for="id" class="icon">ID</label>
+      <div class="input-container">
+        <i class="fas fa-id-badge"></i>
+        <input type="text" id="id" name="id" placeholder="Enter your ID" required />
+      </div>
+
+      <!-- Email -->
+      <label for="email" class="icon">Email</label>
+      <div class="input-container">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+
+      <!-- Password -->
+      <label for="password" class="icon">Password</label>
+      <div class="input-container">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
+      </div>
+
+      <!-- Gender -->
+      <label for="gender" class="icon">Gender</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+        <label><input type="radio" name="gender" value="Other" /> Other</label>
+      </div>
+
+      <!-- Department -->
+      <label for="department" class="icon">Department</label>
+      <select id="department" name="department" required>
+        <option value="">-- Select Department --</option>
+        <option value="CE">Computer Engineering (CE)</option>
+        <option value="IT">Information Technology (IT)</option>
+        <option value="CSE">Computer Science & Engineering (CSE)</option>
+        <option value="EC">Electronics & Communication (EC)</option>
+        <option value="EE">Electrical Engineering (EE)</option>
+      </select>
+
+      <!-- Remember -->
+      <div style="margin-top: 10px;">
+        <input type="checkbox" id="remember" name="remember" />
+        <label for="remember">Remember Me</label>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+
+      <!-- Login Link -->
+      <p class="login-link">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
+
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

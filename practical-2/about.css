@@ -1,0 +1,216 @@
+
+         .college-image {
+            /*image center ma aave*/
+            display: block;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            
+        }
+        /*image per click karta upse */
+         .college-image:hover {
+            transform: scale(1.05);
+        }
+         .services-section {
+            background: linear-gradient(135deg, #d7f5ad 0%, #f6f482 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+           
+        } 
+        /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Logo Header */
+.header-logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 999;
+}
+
+.logo-img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  padding: 30px 10px 20px;
+  background: linear-gradient(90deg, #0053a0, #007bff);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.header-section h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.header-section h5 {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+/* Mission & Vision Section */
+#Head {
+  text-align: center;
+  font-size: 2em;
+  color: #0053a0;
+  margin-bottom: 20px;
+}
+
+.mission-vision-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  gap: 20px;
+}
+
+/* Vision and Mission */
+.vision-card,
+.mission-card {
+  width: 300px;
+}
+
+/* Values card nicheni  second row  mate */
+.values-card {
+  width: 300px;
+  margin-top: 20px;
+  flex-basis: 50%; 
+  display: flex;
+  min-width: 280px;
+  background-color: white;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 83, 160, 0.1);
+  transition: transform 0.3s ease; /* smoothly uper layjay*/
+  justify-content: center; 
+  align-items: left;  /* value lakhelu left side lava*/
+  flex-direction: column; /* values ne hading banvyu and text nichini laine ma lai gaya*/
+}
+
+
+
+.vision-card, .mission-card{
+  flex: 1;
+  min-width: 280px;
+  background-color: white;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 83, 160, 0.1);
+  transition: transform 0.3s ease; /* smoothly uper layjay*/
+
+}
+
+.vision-card:hover,
+.mission-card:hover,
+.values-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-title {
+  color: #007bff;
+  font-size: 1.5em;
+ 
+  margin-bottom: 15px;
+}
+
+/* About CHARUSAT Section */
+.about-section h3 {
+  font-size: 1.8em;
+  color: #0053a0;
+  margin-bottom: 15px;
+}
+
+.achievements-list {
+  list-style-type: none; /* point wise mate na point display no karva */
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.achievements-list li {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-left: 5px solid #007bff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 83, 160, 0.08);
+}
+   .achievements-list li:hover {
+            
+            transform: translateX(-10px);
+             /*  thodu side mathi hover kare  atyare ahi koi asar nahi aave*/
+              transform: scale(1.05);
+}
+
+/* Campus Image */
+.college-image {
+  display: block;
+  margin: 20px auto 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Services Section */
+.services-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #0053a0;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-left: 5px solid #007bff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 8px rgba(0, 83, 160, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h2 {
+  font-size: 1.4em;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 15px 0;
+  background-color: #0053a0;
+  color: white;
+  border-radius: 10px;
+  font-size: 0.95em;
+}

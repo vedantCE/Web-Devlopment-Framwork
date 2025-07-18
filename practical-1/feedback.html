@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+</head>
+<body>
+
+<h2>Student Feedback Form</h2>
+
+<form action="#" method="post">
+  <label for="name">Full Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="subject">Subject:</label><br>
+  <input type="text" id="subject" name="subject"><br><br>
+
+  <label for="rating">How was your experience?</label><br>
+  <select id="rating" name="rating" required>
+    <option value="">-- Select --</option>
+    <option value="Excellent">Excellent</option>
+    <option value="Good">Good</option>
+    <option value="Average">Average</option>
+    <option value="Poor">Poor</option>
+  </select><br><br>
+
+  <label for="comments">Additional Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+  <input type="submit" value="Submit Feedback">
+</form>
+<div class="star-rating">
+  <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+  <span class="rating-value">0/5</span>
+</div>
+<footer>
+  <p>&copy; 2025 All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,24 +1,26 @@
+.college-image {
+  /*image center ma aave*/
+  display: block;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 
-         .college-image {
-            /*image center ma aave*/
-            display: block;
-            margin: 30px auto;
-            border-radius: 15px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-            
-        }
-        /*image per click karta upse */
-         .college-image:hover {
-            transform: scale(1.05);
-        }
-         .services-section {
-            background: linear-gradient(135deg, #d7f5ad 0%, #f6f482 100%);
-            padding: 40px;
-            border-radius: 15px;
-            margin: 40px 0;
-           
-        } 
-        /* General Reset */
+}
+
+/*image per click karta upse */
+.college-image:hover {
+  transform: scale(1.05);
+}
+
+.services-section {
+  background: linear-gradient(135deg, #d7f5ad 0%, #f6f482 100%);
+  padding: 40px;
+  border-radius: 15px;
+  margin: 40px 0;
+
+}
+
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +101,7 @@ body {
 .values-card {
   width: 300px;
   margin-top: 20px;
-  flex-basis: 50%; 
+  flex-basis: 50%;
   display: flex;
   min-width: 280px;
   background-color: white;
@@ -107,15 +109,19 @@ body {
   border-left: 5px solid #007bff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 83, 160, 0.1);
-  transition: transform 0.3s ease; /* smoothly uper layjay*/
-  justify-content: center; 
-  align-items: left;  /* value lakhelu left side lava*/
-  flex-direction: column; /* values ne hading banvyu and text nichini laine ma lai gaya*/
+  transition: transform 0.3s ease;
+  /* smoothly uper layjay*/
+  justify-content: center;
+  align-items: left;
+  /* value lakhelu left side lava*/
+  flex-direction: column;
+  /* values ne hading banvyu and text nichini laine ma lai gaya*/
 }
 
 
 
-.vision-card, .mission-card{
+.vision-card,
+.mission-card {
   flex: 1;
   min-width: 280px;
   background-color: white;
@@ -123,7 +129,8 @@ body {
   border-left: 5px solid #007bff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 83, 160, 0.1);
-  transition: transform 0.3s ease; /* smoothly uper layjay*/
+  transition: transform 0.3s ease;
+  /* smoothly uper layjay*/
 
 }
 
@@ -136,7 +143,7 @@ body {
 .card-title {
   color: #007bff;
   font-size: 1.5em;
- 
+
   margin-bottom: 15px;
 }
 
@@ -148,7 +155,8 @@ body {
 }
 
 .achievements-list {
-  list-style-type: none; /* point wise mate na point display no karva */
+  list-style-type: none;
+  /* point wise mate na point display no karva */
   padding-left: 20px;
   margin-bottom: 40px;
 }
@@ -161,11 +169,12 @@ body {
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 83, 160, 0.08);
 }
-   .achievements-list li:hover {
-            
-            transform: translateX(-10px);
-             /*  thodu side mathi hover kare  atyare ahi koi asar nahi aave*/
-              transform: scale(1.05);
+
+.achievements-list li:hover {
+
+  transform: translateX(-10px);
+  /*  thodu side mathi hover kare  atyare ahi koi asar nahi aave*/
+  transform: scale(1.05);
 }
 
 /* Campus Image */

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+</head>
+
+<body>
+    <h3>simple form</h3>
+    <form onsubmit="return validateForm()">
+        <!-- Name -->
+
+        name:<input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+
+        <!-- Email -->
+
+        email: <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        <input type="submit" value="submit">
+
+
+    </form>
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+
+            if (name === " ") {
+                alert("please enter name");
+                return false;
+            }
+
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(email)) {
+                alert("Enter valid email");
+                return false;
+            }
+            alert("Form submited successfully");
+            return true;
+        }
+    </script>
+</body>
+
+</html>

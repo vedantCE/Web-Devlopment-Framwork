@@ -128,3 +128,9 @@ footer {
   border-radius: 8px;
   font-size: 0.9em;
 }
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}

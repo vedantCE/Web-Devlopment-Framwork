@@ -2,161 +2,177 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CHARUSAT Admission FAQ</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid #ccc;
-            padding: 15px 0;
-        }
-
-        .question {
-            cursor: pointer;
-            font-weight: bold;
-            position: relative;
-            padding-right: 20px;
-        }
-
-        .question::after {
-            content: '▼';
-            position: absolute;
-            right: 0;
-            font-weight: bold;
-            transition: transform 0.3s ease;
-        }
-
-        .question.active::after {
-            content: '▲';
-        }
-
-        .answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease;
-            margin-top: 8px;
-        }
-
-        .answer.show {
-            max-height: 500px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHARUSAT Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="site image.png" type="image/png">
 </head>
 
 <body>
 
-    <h1>CHARUSAT Admission FAQ</h1>
-
-    <div class="faq-item">
-        <div class="question">What are the eligibility criteria for undergraduate programs at CHARUSAT?</div>
-        <div class="answer">Applicants must have passed 12th (HSC) with the required percentage and relevant subjects,
-            usually including Physics, Chemistry, and Mathematics/Biology, depending on the course.</div>
+  <aside>
+    <div class="announcement-bar">
+      <p>New Feature Launch: Check out our latest update! <a href="#">Update</a></p>
     </div>
+  </aside>
 
-    <div class="faq-item">
-        <div class="question">How can I apply for admission at CHARUSAT?</div>
-        <div class="answer">You can apply online through the official CHARUSAT admission portal. The application link is
-            generally made available on the university website during the admission period.</div>
+  <header>
+    <img src="./charusat logo.jpeg" alt="Charusat Logo" class="logo" />
+    <h1 style="margin-top: auto; margin-bottom: 170px;">Charusat Portal</h1>
+    <hr />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="registration.html">Registration</a>
+      <a href="login.html">Login</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to CHARUSAT Portal!</h2>
+    <hr />
+
+    <div class="slider-continer">
+      <div class="slider" id="slider">
+        <img src="./image.jpeg" width="250" height="200" />
+        <img src="./image1.png" width="250" height="200" />
+        <img src="./image2.jpeg" width="250" height="200" />
+        <img src="./image3.jpeg" width="250" height="200" />
+      </div>
+      <button class="btn prev" onclick="prevSlide()">&lt;</button>
+      <button class="btn next" onclick="nextSlide()">&gt;</button>
     </div>
+    <div id="bg">
+      <h3>Highly cherished by students worldwide</h3>
+      <h2>Institution Overview</h2>
 
-    <div class="faq-item">
-        <div class="question">Is there an entrance exam for CHARUSAT admission?</div>
-        <div class="answer">Admission to most programs is based on merit (like GUJCET, JEE, or GSEB scores). However,
-            some courses may have their own entrance tests or interviews.</div>
+      <section id="about">
+        <div class="section" id="vision">
+          <h3>Vision</h3>
+          <p><strong>To become a dynamic global institution in a knowledge-driven world through excellence in teaching,
+              research, and societal contribution.</strong></p>
+        </div>
+        <div class="section" id="mission">
+          <h3>Mission</h3>
+          <p><strong>To serve society by striving to transform it through the creation, augmentation, dissemination, and
+              perpetuation of knowledge.</strong></p>
+        </div>
+        <div class="section" id="values">
+          <h3>Core Values</h3>
+          <p><strong>Integrity, Excellence, Innovation, Teamwork, Respect, and Accountability.</strong></p>
+        </div>
+        <div class="section" id="aim">
+          <h3>Our Aim</h3>
+          <p><strong>To empower students with knowledge, skills, and values that foster leadership, entrepreneurship,
+              and responsible global citizenship in a rapidly evolving world.</strong></p>
+        </div>
+        <div class="section" id="mou">
+          <h3>Current MoU</h3>
+          <p><strong>Coursera</strong> tie-up for global online certifications and skill development.</p>
+        </div>
+        <div class="section" id="events">
+          <h3>Ongoing Events</h3>
+          <ul>
+            <li>🌟 Tech Fest 2025 - Innovation Challenge (July 21–25)</li>
+            <li>🎓 Faculty Development Program on AI & ML (Ongoing)</li>
+            <li>🧬 CHARUSAT Research Symposium 2025 – Submissions Open</li>
+            <li>📚 Orientation Week for New Students (July 22–26)</li>
+          </ul>
+        </div>
+      </section>
+
+      <h5>|| अमृतं तु विद्या ||</h5>
+
+      <section class="highlight">
+        <h3 style="text-align: center;">About CHARUSAT</h3>
+        <ul>
+          <strong>NAAC A+ </strong> Accredited University<br>
+          <strong> Top 200</strong> University by NIRF<br>
+          <strong>Top 3 </strong> in Gujarat by GSIRF<br>
+          United Nations Academic Impact Member<br>
+          <strong>Q2 Innovation Rank </strong> – IND SCIMAGO Rankings<br>
+          <strong>Center of Excellence</strong> – Govt. of Gujarat<br>
+        </ul>
+      </section>
+
+      <section class="stats-section">
+        <div class="stat-item">
+          <h4 data-target="25">25+</h4>
+          <p>Years of Excellence</p>
+        </div>
+        <div class="stat-item">
+          <h4 data-target="15000">15000+</h4>
+          <p>Students</p>
+        </div>
+        <div class="stat-item">
+          <h4 data-target="200">500+</h4>
+          <p>Faculty Members</p>
+        </div>
+        <div class="stat-item">
+          <h4 data-target="95">100%</h4>
+          <p>Placement Rate</p>
+        </div>
+      </section>
+  </main>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>CHARUSAT</h4>
+        <p>Charotar University of Science and Technology<br>Changa, Anand, Gujarat</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="registration.html">Student Registration</a></li>
+          <li><a href="login.html">Student Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: info@charusat.edu.in</p>
+        <p>Phone: +91 2697 265011</p>
+      </div>
     </div>
+    <p id="copyright">
+      &copy; 2025 CHARUSAT Student Services. All rights reserved.
+    </p>
+  </footer>
 
-    <div class="faq-item">
-        <div class="question">What documents are required during the admission process?</div>
-        <div class="answer">You’ll typically need your 10th and 12th mark sheets, transfer certificate, GUJCET/JEE
-            scorecard, passport-sized photographs, ID proof, and category certificate (if applicable).</div>
-    </div>
+  <!----------------------------------------------------------------------------------------------->
+  <script>
+    const slider = document.getElementById('slider');
+    const slides = slider.querySelectorAll('img');  // badhi image select karva
+    const totalSlides = slides.length;
+    let currentIndex = 0;
 
-    <div class="faq-item">
-        <div class="question">What is the admission process for international or NRI students?</div>
-        <div class="answer">CHARUSAT offers NRI and international student quotas. Such applicants need to apply through
-            the International Admissions section with necessary academic equivalency and visa documents.</div>
-    </div>
+    function updateSlider() {
+      slider.style.transform = `translateX(-${currentIndex * 250}px)`;
+    }
 
-    <div class="faq-item">
-        <div class="question">Is hostel accommodation available for new students?</div>
-        <div class="answer">Yes, CHARUSAT provides on-campus hostel facilities for both boys and girls with dining,
-            security, and recreational amenities.</div>
-    </div>
+    function nextSlide() {
+      currentIndex++;
+      if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+      }
+      updateSlider();
+    }
 
-    <div class="faq-item">
-        <div class="question">Can I get admission through management quota?</div>
-        <div class="answer">Yes, limited seats are available under the management quota. Interested students should
-            directly contact the admissions office for eligibility and procedure.</div>
-    </div>
+    function prevSlide() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+      }
+      updateSlider();
+    }
 
-    <div class="faq-item">
-        <div class="question">Are there any scholarships available for new students?</div>
-        <div class="answer">Yes, CHARUSAT offers scholarships based on merit, financial need, and performance in
-            entrance exams. Details are available on the official scholarship page.</div>
-    </div>
-
-    <div class="faq-item">
-        <div class="question">How can I check my admission status after applying?</div>
-        <div class="answer">Once you've submitted your application, you can log in to the portal using your credentials
-            to track your admission status and updates.</div>
-    </div>
-
-    <div class="faq-item">
-        <div class="question">When does the academic session start for new admissions?</div>
-        <div class="answer">Typically, the academic session begins in July or August each year. Exact dates are
-            announced on the official website and via email/SMS notifications to admitted students.</div>
-    </div>
-
-    <script>
-        // Select all questions
-        const questions = document.querySelectorAll('.question');
-
-        questions.forEach(q => {
-            q.addEventListener('click', () => {
-                // Close all other answers and remove their active class
-                questions.forEach(otherQ => {
-                    if (otherQ !== q) {
-                        otherQ.classList.remove('active');
-                        otherQ.nextElementSibling.classList.remove('show');
-                    }
-                });
-
-                // Toggle clicked question and answer
-                q.classList.toggle('active');
-                q.nextElementSibling.classList.toggle('show');
-            });
-        });
-
-    </script>
-
+  </script>
 </body>
 
 </html>
-
-<!--
-
-Notes:
-------------
-
-What is classList?
-
-->classList is a JavaScript property of an HTML element.
-->It gives you a special object to work with the element’s CSS classes easily.
-->Instead of dealing with the whole string of classes manually (like in element.className), classList provides handy methods to add, remove, toggle, or check for classes.
-
-Common methods of classList:
-
-->element.classList.add('class-name') — Adds a CSS class to the element.
-->element.classList.remove('class-name') — Removes a CSS class from the element.
-->element.classList.toggle('class-name') — Adds the class if it's not there; removes it if it is.
-->element.classList.contains('class-name') — Returns true if the element has the class, false otherwise.
-
-
--->

@@ -115,45 +115,25 @@
     </div>
 
     <script>
-
-        // Select all elements with the class 'question' (all your FAQ questions)
+        // Select all questions
         const questions = document.querySelectorAll('.question');
 
-        // For each question element, add a click event listener
-        questions.forEach(question => {
-            question.addEventListener('click', () => {
+        questions.forEach(q => {
+            q.addEventListener('click', () => {
+                // Close all other answers and remove their active class
+                questions.forEach(otherQ => {
+                    if (otherQ !== q) {
+                        otherQ.classList.remove('active');
+                        otherQ.nextElementSibling.classList.remove('show');
+                    }
+                });
 
-                // Toggle the 'active' class on the clicked question
-                // If 'active' is present, it will be removed; if not, it will be added
-                question.classList.toggle('active');
-
-                // Select the next sibling element after the clicked question — this should be the answer div
-                const answer = question.nextElementSibling;
-
-                // Check if the answer currently has the class 'show' (meaning it is visible)
-                if (answer.classList.contains('show')) {
-
-                    // If visible, remove the 'show' class to hide the answer
-                    answer.classList.remove('show');
-
-                } else {
-
-                    // If the answer is hidden and you want only one answer open at a time,
-                    // find all currently visible answers
-                    document.querySelectorAll('.answer.show').forEach(openAns => {
-
-                        // Hide all these open answers
-                        openAns.classList.remove('show');
-
-                        // Also remove the 'active' class from their corresponding questions (previous sibling)
-                        openAns.previousElementSibling.classList.remove('active');
-                    });
-
-                    // Finally, add the 'show' class to the answer related to the clicked question (show this answer)
-                    answer.classList.add('show');
-                }
+                // Toggle clicked question and answer
+                q.classList.toggle('active');
+                q.nextElementSibling.classList.toggle('show');
             });
         });
+
     </script>
 
 </body>

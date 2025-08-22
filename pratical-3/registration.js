@@ -92,5 +92,5 @@ function displayDetails(name, email, username, phone) {
     <p><strong>Username:</strong> ${username}</p>
     <p><strong>Phone:</strong> ${phone}</p>
   `;
-  detailsDiv.style.display = "block";
+  // detailsDiv.style.display = "block";
 }

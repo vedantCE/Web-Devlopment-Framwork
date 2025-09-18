@@ -1,0 +1,41 @@
+  body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+            position: relative;
+            padding-right: 20px;
+        }
+
+        .question::after {
+            content: '▼';
+            position: absolute;
+            right: 0;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .question.active::after {
+            content: '▲';
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            margin-top: 8px;
+        }
+
+        .answer.show {
+            max-height: 500px;
+        }

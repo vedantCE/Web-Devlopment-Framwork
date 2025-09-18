@@ -13,13 +13,30 @@
 
   <aside>
     <div class="announcement-bar">
-      <p>New Feature Launch: Check out our latest update! <a href="#">Update</a></p>
+      <p>Current News & Updates!!<a href="#" onclick="showPopup()">News & Update</a></p>
+       <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+   <div class="popup" id="popup">
+    <h3>News</h3>
+    <ul id="news">
+        <li>Collabrate with coursera edution platform.</li>
+        <li>Campus partner with Perplexity AI "Diving into New era of AI"</li>
+        <li>Gujarat 1<sup>st</sup> University with Excellence Award for Bharat Blockhain</li>
+    </ul>
+    <h3 id="updates">Updates</h3>
+    <ul>
+      <li>Add Slider,Popup functionality</li>
+      <li>Update Footer section</li>
+      <li>Update Home page content</li>
+      <li>Update CSS file</li>
+    </ul>
+    <button onclick="hidePopup()">Close</button>
+</div>
     </div>
   </aside>
 
   <header>
     <img src="./charusat logo.jpeg" alt="Charusat Logo" class="logo" />
-    <h1 style="margin-top: auto; margin-bottom: 170px;">Charusat Portal</h1>
+    <h1>Charusat Portal</h1>
     <hr />
     <nav>
       <a href="index.html">Home</a>
@@ -171,6 +188,16 @@
       }
       updateSlider();
     }
+
+    
+    function showPopup() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+    function hidePopup() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        }
 
   </script>
 </body>

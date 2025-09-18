@@ -1,0 +1,140 @@
+<!-- Display events list and student profiles using object arrays and JSON parsing. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Management System</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            margin: 2px;
+            padding: 5px 10px;
+        }
+
+        .edit {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .delete {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .add {
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Student Management</h2>
+    <button class="add" onclick="addStudent()">Add Student</button>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentBody">
+        </tbody>
+    </table>
+
+    <script>
+        let students = [
+            { id: "23CE001", name: "Aarav Patel", course: "Computer Engineering" },
+            { id: "23CE002", name: "Sara Khan", course: "Information Technology" }
+        ];
+        
+        let editingIndex = -1;
+
+        function displayStudents() {
+            const tbody = document.getElementById("studentBody");
+            tbody.innerHTML = "";
+            students.forEach((student, index) => {
+                const row = tbody.insertRow();
+                if (editingIndex === index) {
+                    row.innerHTML = `
+<td>${student.id}</td>
+<td><input type="text" id="editName${index}" value="${student.name}"></td>
+<td><input type="text" id="editCourse${index}" value="${student.course}"></td>
+<td>
+<button class="add" onclick="saveStudent(${index})">Save</button>
+<button class="delete" onclick="deleteStudent(${index})">Delete</button>
+</td>
+`;
+                } else {
+                    row.innerHTML = `
+<td>${student.id}</td>
+<td>${student.name}</td>
+<td>${student.course}</td>
+<td>
+<button class="edit" onclick="editStudent(${index})">Edit</button>
+<button class="delete" onclick="deleteStudent(${index})">Delete</button>
+</td>
+`;
+                }
+            });
+        }
+
+        function addStudent() {
+            const id = prompt("Enter Student ID:");
+            const name = prompt("Enter Student Name:");
+            const course = prompt("Enter Course:");
+            if (id && name && course) {
+                students.push({ id, name, course });
+                displayStudents();
+            }
+        }
+
+        function editStudent(index) {
+            editingIndex = index;
+            displayStudents();
+        }
+        
+        function saveStudent(index) {
+            const newName = document.getElementById(`editName${index}`).value;
+            const newCourse = document.getElementById(`editCourse${index}`).value;
+            
+            if (newName && newCourse) {
+                students[index].name = newName;
+                students[index].course = newCourse;
+                editingIndex = -1;
+                displayStudents();
+            } else {
+                alert("Please fill all fields");
+            }
+        }
+
+        function deleteStudent(index) {
+            if (confirm("Are you sure you want to delete this student?")) {
+                students.splice(index, 1);
+                displayStudents();
+            }
+        }
+
+        displayStudents();
+    </script>
+</body>
+
+</html>

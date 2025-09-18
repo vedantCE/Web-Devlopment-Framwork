@@ -80,7 +80,7 @@ function validateForm() {
     document.getElementById("registration-form").reset();
   }
 
-  return false; // Prevent actual form submission
+  return false; //  form submission ne bachavse
 }
 
 function displayDetails(name, email, username, phone) {

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="Registration.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  
+
+  <div class="container">
+    <h2>Login</h2>
+    <form id="Login-form" action="Registration.php" method="POST">
+
+       <!-- ID -->
+      <label for="id" class="icon">ID</label>
+      <div class="input-container">
+        <i class="fas fa-id-badge"></i>
+        <input type="text" id="id" name="id" placeholder="Enter your ID" required />
+      </div>
+      <span id="id-error" class="error"></span>
+
+      <!-- Email -->
+      <label for="email" class="icon">Email</label>
+      <div class="input-container">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+      <span id="email-error" class="error"></span>
+
+      
+
+      <!-- Password -->
+      <label for="password" class="icon">Password</label>
+      <div class="input-container">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
+      </div>
+      <span id="password-error" class="error"></span>
+
+      
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+    
+    </form>
+
+    <p id="details">Information will be displayed here after successful submission.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
